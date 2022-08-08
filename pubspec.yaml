@@ -1,6 +1,7 @@
 name: memory_cache
 description: Memory Cache is simple, fast and global in-memory cache.
 version: 1.0.0
+repository: https://github.com/gokberkbar/memory_cache
 
 environment:
   sdk: '>=2.17.3 <3.0.0'
