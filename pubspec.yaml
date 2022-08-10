@@ -1,6 +1,6 @@
 name: memory_cache
-description: Memory Cache is simple, fast and global in-memory cache.
-version: 1.0.0
+description: Memory Cache is simple, fast and global in-memory cache with CRUD features. 
+version: 1.1.0
 repository: https://github.com/gokberkbar/memory_cache
 
 environment:
@@ -9,3 +9,4 @@ environment:
 dev_dependencies:
   lints: ^2.0.0
   test: ^1.16.0
+  analyzer: ^4.5.0

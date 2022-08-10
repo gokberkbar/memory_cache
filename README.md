@@ -26,7 +26,7 @@ $ flutter pub add memory_cache
 This will add a line like this to your package's pubspec.yaml (and run an implicit `dart pub get` or `flutter pub get`):
 ```
 dependencies:
-  memory_cache: ^1.0.0
+  memory_cache: ^1.1.0
 ```
 
 ## Usage
