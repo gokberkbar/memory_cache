@@ -1,6 +1,6 @@
 name: memory_cache
 description: Memory Cache is simple, fast and global in-memory cache with CRUD features. 
-version: 1.1.0
+version: 1.2.0
 repository: https://github.com/gokberkbar/memory_cache
 
 environment:

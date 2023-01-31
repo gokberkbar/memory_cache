@@ -14,4 +14,14 @@ void main() {
   MemoryCache.instance.delete('myKey');
   myValue = MemoryCache.instance.read<String>('myKey');
   print(myValue);
+
+  final MemoryCache localCache = MemoryCache();
+  localCache.create(
+    'myKey',
+    'myValue',
+    expiry: const Duration(seconds: 5),
+  );
+  String? localCacheValue = localCache.read<String>('myKey');
+  print(localCacheValue);
+  print(MemoryCache.instance.read<String>('myKey'));
 }

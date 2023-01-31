@@ -6,6 +6,7 @@ Memory Cache is simple, fast and global in-memory cache.
 
 - Create, read, update, delete and invalidate cache.
 - Expirable Cache
+- Creating local MemoryCache instance.
 
 ## Getting started
 
@@ -26,7 +27,7 @@ $ flutter pub add memory_cache
 This will add a line like this to your package's pubspec.yaml (and run an implicit `dart pub get` or `flutter pub get`):
 ```
 dependencies:
-  memory_cache: ^1.1.0
+  memory_cache: ^1.2.0
 ```
 
 ## Usage
@@ -57,4 +58,12 @@ MemoryCache.instance.update('myKey', 'myUpdatedValue');
 ### Delete Value
 ```dart
 MemoryCache.instance.delete('myKey');
+```
+
+### Local Instance
+
+MemoryCache can be created locally and same features will be supported
+
+```dart
+final MemoryCache localCache = MemoryCache();
 ```

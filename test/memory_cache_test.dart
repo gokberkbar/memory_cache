@@ -91,5 +91,12 @@ void main() {
       final isEmpty = MemoryCache.instance.isEmpty;
       expect(isEmpty, true);
     });
+
+    test('create local memory cache instance', () {
+      final localeInstance = MemoryCache();
+      final isSameInstance =
+          localeInstance.hashCode == MemoryCache.instance.hashCode;
+      expect(isSameInstance, false);
+    });
   });
 }

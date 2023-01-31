@@ -2,8 +2,14 @@ import 'package:memory_cache/src/cache_item.dart';
 
 /// SimpleCache is a simple and fast in-memory cache.
 class MemoryCache {
+  /// Private Constructor
   MemoryCache._();
+
+  /// Singleton instance of MemoryCache.
   static final MemoryCache instance = MemoryCache._();
+
+  /// Public Constructor
+  MemoryCache();
 
   /// internal cache
   final Map<String, CacheItem> _cache = {};
